@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div style = 'background-color:rgb(42, 132, 111);border: 2px solid rgb(22, 44, 31);width: fit-content; margin-bottom: 1%; margin-left: 2%;'>
+<a href="{% url 'logout' %}" style="color: #ffffff; font-family: serif;font-size:270%; text-decoration:none;">Logout</a>|
+</div>
+<div style = 'background-color:rgb(42, 132, 111);border: 2px solid rgb(22, 44, 31);width: fit-content;margin-left: 2%;'>
+<a href="{% url 'csv' %}" style="color: #ffffff; font-family: serif;font-size:270%; text-decoration:none;">CV</a>
+</div style = 'background-color:rgb(42, 132, 111);border: 2px solid rgb(22, 44, 31);width: fit-content; margin-bottom: 1%; margin-left: 2%;'>
+{% else %}
+<div style = 'background-color:rgb(42, 132, 111);border: 2px solid rgb(22, 44, 31);width: fit-content; margin-bottom: 1%; margin-left: 2%;'>
+<a href="{% url 'login' %}"style="color: #ffffff; font-family: serif;font-size:270%; text-decoration:none;">Login</a>
+</div>
+<div style = 'background-color:rgb(42, 132, 111);border: 2px solid rgb(22, 44, 31);width: fit-content; margin-bottom: 1%; margin-left: 2%;'>
+ <a href="{% url 'registration' %}" style="color: #ffffff; font-family: serif;font-size:270%; text-decoration:none;">Registration</a> 
+</div>
+{% endif %}
+{% endblock %}

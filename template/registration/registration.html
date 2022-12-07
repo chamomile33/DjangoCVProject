@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block body %}
+    <h1 style = 'background:#4dc69d; color:rgb(255, 255, 255); padding:10px 20px;text-align: center; font-size: 24px;'>Registration</h1>
+    <hr>
+
+    <form action="{% url 'registration' %}" method="post">
+        <table style='color:rgb(11, 88, 11); font-size:18px; font-weight:bolder;font-family: inherit;'>
+            <p>{{ form.as_table }}</p>
+        </table>
+        {% csrf_token %}
+    <button type="submit" style = 'background-color: white;border: 3px solid #4CAF71;color: grey ;text-align: center;font-size: 18px; margin-left: 20px; padding: 8px 16px; border-radius: 8px; margin-top: 1%;margin-left: 8%;'>Submit</button>
+    </form>
+{% endblock %}
+

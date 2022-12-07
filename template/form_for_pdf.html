@@ -1,0 +1,35 @@
+<html>
+      <head>
+        <meta name="pdfkit-page-size" content="Legal"/>
+        <meta content='text/html;charset=UTF-8' http-equiv='content-type'/>
+      </head>
+      <body>
+      <div>
+        <p style="text-align: center; font-style:oblique; font-size:42px;margin-bottom: 0%;" >{{ form.first_name.value }} {{form.last_name.value}}</p>
+        <p style="text-align: center; font-style:inherit; font-size:24px;">Email: {{ form.email.value }}  |  Tel: {{ form.phone_number.value }}</p>
+      </div>
+      <hr/>
+      <div>
+        <strong style="text-align:left;font-size:24px;" >EXPERIENCE</strong>
+        <p style="font-style:normal; font-size:21px;"> {{ form.experience.value }}</p>
+      </div>
+      <hr/>
+      <div>
+        <strong style="text-align:left;font-size:24px;" >SKILLS</strong>
+        <p style="font-style:normal; font-size:21px;"> {{ form.skills.value }}</p>
+      </div>
+      <hr/>
+      <div>
+        <strong style="text-align:left;font-size:24px;" >EDUCATION</strong>
+        <p style="font-style:normal; font-size:21px;"> {{ form.education.value }}</p>
+      </div>
+      <hr/>
+      <div>
+        <strong style="text-align:left;font-size:24px;" >ADDITIONAL</strong>
+        <p style="font-style:normal; font-size:21px;"> {{ form.additional.value }}</p>
+      </div>
+      </body>
+      <footer>
+        <p style="text-align: center; font-style:inherit; font-size:24px;">made by YoЖCV</p>
+      </footer>
+      </html>
